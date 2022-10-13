@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+  }
+  h1 {
+    margin-top: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    color: #66BFBF;
+    line-height: 2;
+  }
+  h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    color: #66BFBF;
+    font-weight: normal;
+    line-height: 2;
+  }
+  h3 {
+    font-family: 'Merriweather', serif;
+    color: #11999E;
+    font-size: 20px;
+  }
+  a {
+    color:#11999E;
+    margin: 10px 20px ;
+  }
+  a:hover{
+    color: #EAF6F6;
+  }
+  /****   class ****/
+  .top-container {
+    background-color: #EEF1FF;
+    position: relative;
+    padding-top: 100px;
+  }
+  .middle-container {
+  
+  
+  }
+  .bottom-container {
+   background-color: #66BFBF;
+   line-height: 1.5;
+   padding: 50px 0 20px 0;
+  }
+  .skill-row {
+    margin: 100px auto 100px auto;
+    text-align: left;
+    width: 50%;
+    line-height: 1.5;
+  
+  }
+  .pro-img {
+    width: 250px;
+  }
+  .cloud-img {
+    float: left;
+    margin-right: 30px;
+  }
+  .code-img {
+    float: right;
+    margin-left: 30px;
+  }
+  .cook-img {
+    float: left;
+    margin-right: 30px;
+  }
+  .pro {
+    text-decoration: underline;
+  }
+  .bottom-cloud
+  {
+    position: absolute;
+    left: 300px;
+    top: 400px;
+  }
+  .top-cloud
+  {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+  }
+  .ex-table
+  {
+    margin-left: 200px;
+  }
+  .skill-tb
+  {
+    margin-left: 300px;
+    margin-right: 30px;
+  }
+  .btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11cdd4);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11cdd4);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11cdd4);
+    background-image: -o-linear-gradient(top, #11cdd4, #11cdd4);
+    background-image: linear-gradient(to bottom, #11cdd4, #11cdd4);
+    -webkit-border-radius: 13;
+      -moz-border-radius: 13;
+      border-radius: 13px;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #66BFBF;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+  .ContactMe
+  {
+    margin: 100px auto 100px auto;
+    width: 50%;
+    line-height: 1.5;
+  }
+  .copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+  }
+  
