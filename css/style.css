@@ -1,4 +1,4 @@
-/* --- Base --- */
+
 *{box-sizing:border-box}
 body{margin:0;font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#2f2f2f;line-height:1.6}
 a{color:#0b84ff;text-decoration:none}
@@ -6,7 +6,6 @@ h1,h2,h3{margin:0 0 .5rem 0}
 hr{border:0;border-top:1px solid #eee;margin:32px 0}
 table{border-collapse:separate;border-spacing:0 8px}
 
-/* --- Header / hero --- */
 .top-container{background:#e6f7ff;position:relative;padding:80px 20px 20px;text-align:center;overflow:hidden}
 .top-container h1{font-family:'Sacramento',cursive;font-size:56px}
 .top-container h2{font-family:'Merriweather',serif;font-weight:400}
@@ -15,7 +14,6 @@ table{border-collapse:separate;border-spacing:0 8px}
 .top-cloud{top:10px;right:10px}
 .bottom-cloud{bottom:20px;left:10px}
 
-/* --- Sections --- */
 .middle-container{max-width:980px;margin:0 auto;padding:40px 16px}
 .profile{text-align:center}
 .profile .pro-img{width:160px;height:160px;object-fit:cover;border-radius:50%;box-shadow:0 2px 12px rgba(0,0,0,.08)}
@@ -34,11 +32,9 @@ table{border-collapse:separate;border-spacing:0 8px}
 .footer-link{margin:0 8px;color:#6c5ce7}
 .copyright{color:#666}
 
-/* --- Project cards --- */
 #projects{background:#fff;padding:24px 0}
 .project-card{border-radius:14px;padding:1rem;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);margin:12px 0}
 .project-card h3{margin:0 0 .25rem 0}
 .project-card p{margin:0;color:#444}
 
-/* --- Small tweaks --- */
 @media (max-width:640px){.skill-row img{float:none;margin:0 0 12px 0}}

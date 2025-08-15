@@ -6,24 +6,19 @@
 <link rel="stylesheet" href="../css/project.css">
 </head><body>
 <header class="header"><div class="container">
-  <div><div class="site-title"><a href="/" style="color:white;text-decoration:none">Aung Bo Tun • Platform Lab</a></div>
-  <div class="breadcrumbs"><a href="/">Home</a> › Projects › Voice & AI Data Pipeline</div></div>
+  <div><div class="site-title"><a href="../" style="color:white;text-decoration:none">Aung Bo Tun • Platform Lab</a></div>
+  <div class="breadcrumbs"><a href="../">Home</a> › Projects › Voice & AI Data Pipeline</div></div>
   <span class="badge">AI / Data</span>
 </div></header>
 <main class="container">
   <div class="title"><h1>Voice & AI Data Pipeline</h1></div>
   <p class="lead">Ingest calls, transcribe, redact, summarize, and answer queries with optional geo context.</p>
+  <section class="card"><h2>Description</h2><p>A cost-effective pipeline using managed STT/LLM or local models; ingests audio, applies diarization and PII redaction, stores transcripts, and supports QA/search.</p></section>
+  <section class="card"><h2>Tech & Design</h2><ul class="checks"><li>FastAPI ingest (HTTP/WebSocket)</li><li>STT (managed API or Whisper), diarization/VAD</li><li>PII redaction (rules + DLP)</li><li>Postgres (+pgvector), optional PostGIS for geo</li></ul></section>
+  <section class="card"><h2>Architecture</h2><pre><code>Ingest → STT → Diarize/Redact → Summarize → Index (Postgres/pgvector)</code></pre></section>
   <section class="card"><h2>Benefits</h2><ul class="checks"><li>Searchable knowledge from calls</li><li>PII redaction and auditability</li><li>Geo-aware answers (PostGIS optional)</li></ul></section>
   <section class="card"><h2>Quick Steps</h2><ol class="steps"><li>Deploy ingest API; set STT/LLM API keys</li><li>Store audio in S3/GCS; transcripts in Postgres</li><li>Use Grafana/Tempo to inspect traces</li></ol></section>
-  <section class="card">
-    <h2>Links</h2>
-    <div class="kv">
-      <div><strong>Repo/Code</strong></div><div><a href="#">add link</a></div>
-      <div><strong>Docs</strong></div><div><a href="#">add link</a></div>
-      <div><strong>Dashboard</strong></div><div><a href="#">add link</a></div>
-    </div>
-  </section>
-  <p><a class="btn" href="/">← Back to Home</a></p>
+  <p><a class="btn" href="../">← Back to Home</a></p>
   <div class="footer">© 2025 Aung Bo Tun</div>
 </main>
 </body></html>

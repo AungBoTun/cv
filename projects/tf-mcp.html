@@ -6,24 +6,19 @@
 <link rel="stylesheet" href="../css/project.css">
 </head><body>
 <header class="header"><div class="container">
-  <div><div class="site-title"><a href="/" style="color:white;text-decoration:none">Aung Bo Tun • Platform Lab</a></div>
-  <div class="breadcrumbs"><a href="/">Home</a> › Projects › Terraform Generator via MCP (S3)</div></div>
+  <div><div class="site-title"><a href="../" style="color:white;text-decoration:none">Aung Bo Tun • Platform Lab</a></div>
+  <div class="breadcrumbs"><a href="../">Home</a> › Projects › Terraform Generator via MCP (S3)</div></div>
   <span class="badge">Infra as Code</span>
 </div></header>
 <main class="container">
   <div class="title"><h1>Terraform Generator via MCP (S3)</h1></div>
   <p class="lead">Generate standards-based Terraform from a YAML spec; plan and apply with guardrails.</p>
+  <section class="card"><h2>Description</h2><p>Dev provides a simple spec; MCP renders module-based Terraform, runs plan in CI with security checks, and applies when approved.</p></section>
+  <section class="card"><h2>Tech & Design</h2><ul class="checks"><li>Terraform modules + conftest/OPA checks</li><li>tfsec/checkov security scans in CI</li><li>OIDC to cloud for credentials</li><li>Terragrunt optional for multi-env</li></ul></section>
+  <section class="card"><h2>Architecture</h2><pre><code>Dev → MCP render → PR → CI checks → plan/apply</code></pre></section>
   <section class="card"><h2>Benefits</h2><ul class="checks"><li>Consistency via modules</li><li>Policy-as-code (OPA) gates</li><li>Fast provisioning with human approve/apply</li></ul></section>
   <section class="card"><h2>Quick Steps</h2><ol class="steps"><li>Fill YAML spec (bucket, tags, tenant)</li><li>Render stack and run plan</li><li>Approve and apply</li></ol></section>
-  <section class="card">
-    <h2>Links</h2>
-    <div class="kv">
-      <div><strong>Repo/Code</strong></div><div><a href="#">add link</a></div>
-      <div><strong>Docs</strong></div><div><a href="#">add link</a></div>
-      <div><strong>Dashboard</strong></div><div><a href="#">add link</a></div>
-    </div>
-  </section>
-  <p><a class="btn" href="/">← Back to Home</a></p>
+  <p><a class="btn" href="../">← Back to Home</a></p>
   <div class="footer">© 2025 Aung Bo Tun</div>
 </main>
 </body></html>

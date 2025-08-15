@@ -6,24 +6,20 @@
 <link rel="stylesheet" href="../css/project.css">
 </head><body>
 <header class="header"><div class="container">
-  <div><div class="site-title"><a href="/" style="color:white;text-decoration:none">Aung Bo Tun • Platform Lab</a></div>
-  <div class="breadcrumbs"><a href="/">Home</a> › Projects › Developer Portal (Envoy + Istio + MCP)</div></div>
+  <div><div class="site-title"><a href="../" style="color:white;text-decoration:none">Aung Bo Tun • Platform Lab</a></div>
+  <div class="breadcrumbs"><a href="../">Home</a> › Projects › Developer Portal (Envoy + Istio + MCP)</div></div>
   <span class="badge">Service Platform</span>
 </div></header>
 <main class="container">
   <div class="title"><h1>Developer Portal (Envoy + Istio + MCP)</h1></div>
   <p class="lead">Self-service creation of public/internal services with secure defaults and observability.</p>
+  <section class="card"><h2>Description</h2><p>Developers request a new service, and the platform scaffolds manifests, routes through Envoy, and enforces mesh security and policies automatically.</p></section>
+  <section class="card"><h2>Tech & Design</h2><ul class="checks"><li>Envoy Gateway (host-based routing, JWT, rate-limits)</li><li>Istio mTLS + AuthorizationPolicy (zero trust)</li><li>MCP/Backstage templates to render k8s + Gateway YAML</li><li>Grafana/Tempo for traces and dashboards</li></ul></section>
+  <section class="card"><h2>Architecture</h2><pre><code>Internet → Envoy Gateway → Istio (mTLS) → Services
+Backstage/MCP → plan → PR → apply</code></pre></section>
   <section class="card"><h2>Benefits</h2><ul class="checks"><li>Golden-path templates for speed</li><li>Security by default (mTLS, JWT, rate-limits)</li><li>Standard traces/dashboards for every service</li></ul></section>
   <section class="card"><h2>Quick Steps</h2><ol class="steps"><li>Create a spec (service, tenant, repo)</li><li>Generate Kubernetes + Gateway manifests</li><li>Merge PR → routed via Envoy</li></ol></section>
-  <section class="card">
-    <h2>Links</h2>
-    <div class="kv">
-      <div><strong>Repo/Code</strong></div><div><a href="#">add link</a></div>
-      <div><strong>Docs</strong></div><div><a href="#">add link</a></div>
-      <div><strong>Dashboard</strong></div><div><a href="#">add link</a></div>
-    </div>
-  </section>
-  <p><a class="btn" href="/">← Back to Home</a></p>
+  <p><a class="btn" href="../">← Back to Home</a></p>
   <div class="footer">© 2025 Aung Bo Tun</div>
 </main>
 </body></html>

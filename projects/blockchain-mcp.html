@@ -6,24 +6,20 @@
 <link rel="stylesheet" href="../css/project.css">
 </head><body>
 <header class="header"><div class="container">
-  <div><div class="site-title"><a href="/" style="color:white;text-decoration:none">Aung Bo Tun • Platform Lab</a></div>
-  <div class="breadcrumbs"><a href="/">Home</a> › Projects › Blockchain via MCP</div></div>
+  <div><div class="site-title"><a href="../" style="color:white;text-decoration:none">Aung Bo Tun • Platform Lab</a></div>
+  <div class="breadcrumbs"><a href="../">Home</a> › Projects › Blockchain via MCP</div></div>
   <span class="badge">Web3</span>
 </div></header>
 <main class="container">
   <div class="title"><h1>Blockchain via MCP</h1></div>
   <p class="lead">Ask an agent to scaffold, test, and deploy contracts/dApps to testnets safely.</p>
+  <section class="card"><h2>Description</h2><p>MCP generates a contract/dApp project with tests and CI, runs static analysis, and deploys to a testnet with verification.</p></section>
+  <section class="card"><h2>Tech & Design</h2><ul class="checks"><li>Foundry/Hardhat containers</li><li>Static analysis: Slither/Mythril</li><li>CI for test + deploy + verify</li><li>External Secrets for keys/RPC endpoints</li></ul></section>
+  <section class="card"><h2>Architecture</h2><pre><code>MCP → Foundry/Hardhat → Testnet RPC
+CI → analyze/test/deploy → verify</code></pre></section>
   <section class="card"><h2>Benefits</h2><ul class="checks"><li>Rapid prototypes on testnets</li><li>Static analysis before deploy</li><li>Consistent CI and verification</li></ul></section>
   <section class="card"><h2>Quick Steps</h2><ol class="steps"><li>Ask MCP for a new contract (e.g., ERC-20)</li><li>Run tests and static analysis</li><li>Deploy and verify on a testnet</li></ol></section>
-  <section class="card">
-    <h2>Links</h2>
-    <div class="kv">
-      <div><strong>Repo/Code</strong></div><div><a href="#">add link</a></div>
-      <div><strong>Docs</strong></div><div><a href="#">add link</a></div>
-      <div><strong>Dashboard</strong></div><div><a href="#">add link</a></div>
-    </div>
-  </section>
-  <p><a class="btn" href="/">← Back to Home</a></p>
+  <p><a class="btn" href="../">← Back to Home</a></p>
   <div class="footer">© 2025 Aung Bo Tun</div>
 </main>
 </body></html>
