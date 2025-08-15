@@ -47,19 +47,21 @@ h1,h2,h3{margin:.3rem 0}
   display:grid;grid-template-columns:1.4fr 1fr;gap:18px;align-items:center;overflow:hidden;
 }
 .hero-art{
+  position: relative;           /* anchor pseudo-elements */
   border-radius:16px;
   border:1px solid var(--border);
-  min-height:220px;           /* ensure a nice block height */
-  aspect-ratio: 16 / 10;      /* scales responsively */
+  min-height:220px;
+  aspect-ratio:16/10;
   background:
     linear-gradient(135deg, rgba(108,92,231,.15), rgba(0,210,211,.12)),
-    url("images/hero-devops-ai.png") center / contain no-repeat;
+    url("/cv/images/hero-devops-ai.png");
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
 }
-/* bubbles */
 .hero-art:before,
 .hero-art:after{
-  content:""; position:absolute; border-radius:50%;
-  filter: blur(20px);
+  content:""; position:absolute; border-radius:50%; filter:blur(20px);
 }
 .hero-art:before{ width:240px; height:240px; right:-40px; top:-40px; background:rgba(108,92,231,.35); }
 .hero-art:after{ width:260px; height:260px; left:-60px; bottom:-60px; background:rgba(0,210,211,.35); }
