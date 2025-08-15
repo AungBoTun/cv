@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aung Bo Tun • Platform Lab</title>
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/project.css">
-  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
   <header class="header">
@@ -21,53 +19,33 @@
   </header>
 
   <main class="container">
-    <!-- HERO -->
+    <!-- HERO (no images, pure CSS) -->
     <section class="card hero">
       <div>
-        <h1 class="title" style="margin:0 0 6px 0">I build developer platforms that are secure by default.</h1>
+        <h1 style="margin:0 0 6px 0">I build developer platforms that are secure by default.</h1>
         <p class="lead">DevOps • Kubernetes/EKS • Terraform • Envoy/Istio • AI data pipelines • FinOps & security guardrails.</p>
-        <div class="avatarRow">
-          <img class="avatar" src="images/mcp.svg" alt="Avatar stylized (replace with your photo if you like)">
-          <div class="small">I'm Alex (Aung Bo Tun) — a DevOps & Web Developer. I create golden paths for teams.</div>
-        </div>
         <div class="chips">
           <span class="chip">AWS</span><span class="chip">EKS</span><span class="chip">Terraform</span>
           <span class="chip">GitHub Actions</span><span class="chip">Envoy</span><span class="chip">Istio</span>
           <span class="chip">OpenCost</span><span class="chip">Grafana</span>
         </div>
       </div>
-      <div><img src="images/ai.svg" alt="AI visual"></div>
+      <div class="hero-art"></div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="card" id="projects">
-      <h2>Featured Projects</h2>
-      <div class="section-grid">
-        <a class="p-card" href="projects/dev-portal.html">
-          <img src="images/backstage.svg" alt="Backstage / Portal icon">
-          <h3>Developer Portal (Envoy + Istio + MCP)</h3>
-          <p>Self-service public/internal services with secure defaults.</p>
-        </a>
-        <a class="p-card" href="projects/voice-ai.html">
-          <img src="images/ai.svg" alt="AI icon">
-          <h3>Voice & AI Data Pipeline</h3>
-          <p>Ingest calls → transcribe → redact → summarize → search.</p>
-        </a>
-        <a class="p-card" href="projects/blockchain-mcp.html">
-          <img src="images/mcp.svg" alt="MCP icon">
-          <h3>Blockchain via MCP</h3>
-          <p>Scaffold, test, and deploy contracts to testnets.</p>
-        </a>
-        <a class="p-card" href="projects/tf-mcp.html">
-          <img src="images/mcp.svg" alt="Terraform MCP icon">
-          <h3>Terraform Generator via MCP</h3>
-          <p>Generate standards-based Terraform from a simple spec.</p>
-        </a>
-        <a class="p-card" href="projects/finops-security.html">
-          <img src="images/security.svg" alt="Cloud security icon">
-          <h3>FinOps + Security Program</h3>
-          <p>Save cost, enforce policy, and harden supply chain.</p>
-        </a>
+    <!-- SKILLS -->
+    <section class="card">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">AWS Cloud Management</span>
+        <span class="chip">Terraform & IaC Modules</span>
+        <span class="chip">Kubernetes (EKS)</span>
+        <span class="chip">CI/CD (GitHub Actions)</span>
+        <span class="chip">ELK / Observability</span>
+        <span class="chip">Python & Go</span>
+        <span class="chip">Envoy / API Gateway</span>
+        <span class="chip">Istio Service Mesh</span>
+        <span class="chip">FinOps & Security</span>
       </div>
     </section>
 
@@ -78,6 +56,33 @@
         <div class="tl-item"><strong>2020–2022</strong> — Senior DevOps, <a href="https://www.bybit.com" target="_blank" rel="noopener">Bybit</a></div>
         <div class="tl-item"><strong>2016–2020</strong> — Cloud Lead, <a href="https://www.certisgroup.com" target="_blank" rel="noopener">Certis Group</a></div>
         <div class="tl-item"><strong>2014–2016</strong> — Senior Developer (Application Consultant), <a href="https://www.ncs.co" target="_blank" rel="noopener">NCS</a></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="card" id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <a class="p-card" href="projects/dev-portal.html">
+          <h3>Developer Portal (Envoy + Istio + MCP)</h3>
+          <p>Self-service public/internal services with secure defaults.</p>
+        </a>
+        <a class="p-card" href="projects/voice-ai.html">
+          <h3>Voice & AI Data Pipeline</h3>
+          <p>Ingest calls → transcribe → redact → summarize → search.</p>
+        </a>
+        <a class="p-card" href="projects/blockchain-mcp.html">
+          <h3>Blockchain via MCP</h3>
+          <p>Scaffold, test, and deploy contracts to testnets.</p>
+        </a>
+        <a class="p-card" href="projects/tf-mcp.html">
+          <h3>Terraform Generator via MCP</h3>
+          <p>Generate standards-based Terraform from a simple spec.</p>
+        </a>
+        <a class="p-card" href="projects/finops-security.html">
+          <h3>FinOps + Security Program</h3>
+          <p>Save cost, enforce policy, and harden supply chain.</p>
+        </a>
       </div>
     </section>
 
