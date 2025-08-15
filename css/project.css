@@ -47,8 +47,13 @@ h1,h2,h3{margin:.3rem 0}
   display:grid;grid-template-columns:1.4fr 1fr;gap:18px;align-items:center;overflow:hidden;
 }
 .hero-art{
-  border-radius:16px;min-height:220px;border:1px solid var(--border);
-  position:relative;background:linear-gradient(135deg, rgba(108,92,231,.25), rgba(0,210,211,.15));
+  border-radius:16px;
+  border:1px solid var(--border);
+  min-height:220px;           /* ensure a nice block height */
+  aspect-ratio: 16 / 10;      /* scales responsively */
+  background:
+    linear-gradient(135deg, rgba(108,92,231,.15), rgba(0,210,211,.12)),
+    url("images/hero-devops-ai.png") center / contain no-repeat;
 }
 /* bubbles */
 .hero-art:before,
