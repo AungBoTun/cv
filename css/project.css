@@ -25,7 +25,7 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
 .chip{background:rgba(108,92,231,.1);border:1px solid rgba(108,92,231,.35);color:#6c5ce7;padding:.2rem .55rem;border-radius:999px;font-weight:700;font-size:.8rem}
 .section-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .p-card{display:block;padding:14px;border:1px solid var(--border);border-radius:12px;background:var(--card);box-shadow:0 1px 10px rgba(0,0,0,.06);text-decoration:none}
-.p-card img{width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:8px}
+.p-card img{width:100%;height:120px;object-fit:contain;background:linear-gradient(180deg,#fff, #f6f7fb);border-radius:8px;margin-bottom:8px;padding:10px}
 .p-card h3{margin:.25rem 0 .25rem}
 .p-card p{margin:0;color:var(--muted)}
 .timeline{position:relative;padding-left:20px}
